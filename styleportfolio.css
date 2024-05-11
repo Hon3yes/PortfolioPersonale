@@ -1,7 +1,10 @@
 body{
-  /* background: linear-gradient(180deg, rgba(0,126,167,1) 0%, rgba(0,23,31,1) 100%);*/
-  background: linear-gradient(360deg, #00171F 0%, #007EA7 100%)
+  /* background: linear-gradient( rgba(0,126,167,1) 0%, rgba(0,23,31,1) 100%); */
+    background: linear-gradient(360deg, #00171F 0%, #007EA7 100%);
+    margin: 0;
+    width: 95vw;
 }
+
 
 img{
  scale: 50%;    
@@ -34,8 +37,9 @@ img{
 
 .nome{
     text-indent: -5rem;
-    font-size: 4rem;
-    padding-left: 5rem;
+    font-size: 50px;
+     padding-left: 5rem; 
+    font-family: abhaya libre, sans-serif;
 }
 
 #ellipse1{
@@ -65,5 +69,61 @@ img{
     display: inline;
     position: absolute;
     right:0px;
-    top:700px;
+    top:800px;
 }
+
+header{
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    position:sticky;
+    top:0px;
+    z-index: 9;
+    font-family: abhaya libre, sans-serif;
+    font-size: 30px;
+    color: #012B3C
+}
+
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    font-family: abhaya libre, sans-serif;  
+    font-size: 70px;
+    color: white;
+    text-align: center;
+
+}
+
+.descrizione{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color:white;
+    text-align: center;
+}
+
+.portfolio{
+    font-family: abhaya libre, sans-serif;  
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+
+ /* .nomeheader{
+    position:absolute;
+    top: 7px;
+    
+} */
+
+.contprima{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 2 / 2 / 3; }
+.div2 { grid-area: 2 / 2 / 3 / 3; }
+.div3 { grid-area: 3 / 2 / 4 / 3; }
